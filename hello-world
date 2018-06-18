@@ -21,3 +21,6 @@ if (!$pass) {
 }
 $auth = ['name'=>$user,'password'=>$pass];
 echo 'USER:'.$user.',PASS:'.$pass."\n";
+
+echo 1;
+echo 2;
