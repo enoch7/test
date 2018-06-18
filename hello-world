@@ -1,0 +1,23 @@
+#!/usr/bin/php
+<?php
+
+fwrite(STDOUT,'>请输入用户名:');
+$i = 1;
+while((!$user = trim(fgets(STDIN))) && $i<3){
+	fwrite(STDOUT,'>请输入用户名:');
+	$i++;
+}
+if (!$user) {
+	exit(0);
+}
+$i = 1;
+fwrite(STDOUT,'>请输入密码:');
+while((!$pass = trim(fgets(STDIN))) && $i<3){
+	fwrite(STDOUT,'>请输入密码:');
+	$i++;
+}
+if (!$pass) {
+	exit(0);
+}
+$auth = ['name'=>$user,'password'=>$pass];
+echo 'USER:'.$user.',PASS:'.$pass."\n";
