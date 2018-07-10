@@ -23,3 +23,7 @@ $auth = ['name'=>$user,'password'=>$pass];
 echo 'USER:'.$user.',PASS:'.$pass."\n";
 
 
+echo "dev1";
+
+echo "dev2";
+
